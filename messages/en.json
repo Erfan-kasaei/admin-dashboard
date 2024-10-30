@@ -1,0 +1,17 @@
+{
+  "HomePage": {
+    "title": "Hello world!",
+    "about": "Go to the about page"
+  },
+  "Menu": {
+    "overview": "Overview",
+    "artworks": "Artworks",
+    "orders": "Orders",
+    "users": "Users",
+    "products": "Products",
+    "coustomers": "Coustomers",
+    "seller": "Seller",
+    "contract": "contract",
+    "setting": "Setting"
+  }
+}
