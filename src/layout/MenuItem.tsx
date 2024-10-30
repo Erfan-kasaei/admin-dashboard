@@ -4,12 +4,11 @@ import { MenuItems } from "../hooks/useMenuItems";
 
 export default function MenuItem({ item }: { item: MenuItems }) {
   const pathname = usePathname();
-  console.log(pathname);
   return (
     <Link
       href={item.href}
       className={`py-3 px-8 flex justify-between items-center hover:bg-zinc-700 ${
-        pathname.includes(item.href) && `border-l-[6px]`
+        pathname === item.href && `border-l-[6px]`
       }`}
     >
       <div className="flex items-center gap-2">

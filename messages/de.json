@@ -1,0 +1,22 @@
+{
+  "HomePage": {
+    "title": "Hallo Welt!",
+    "about": "Gehe zur Über-Seite"
+  },
+  "Menu": {
+    "overview": "Übersicht",
+    "artworks": "Kunstwerke",
+    "orders": "Bestellungen",
+    "users": "Benutzer",
+    "products": "Produkte",
+    "coustomers": "Kunden",
+    "seller": "Verkäufer",
+    "contract": "Vertrag",
+    "setting": "Einstellung"
+  },
+  "OrdersPage": {
+    "title": "Bestellliste",
+    "export": "Exportieren",
+    "create": "Bestellung erstellen"
+  }
+}

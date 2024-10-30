@@ -13,5 +13,16 @@
     "seller": "Seller",
     "contract": "contract",
     "setting": "Setting"
+  },
+  "OrdersPage": {
+    "title": "Orders list",
+    "export": "Export",
+    "create": "Create Order"
+  },
+  "TableHeads": {
+    "id": "Id",
+    "name": "Name",
+    "email": "Email",
+    "phone": "Phone"
   }
 }

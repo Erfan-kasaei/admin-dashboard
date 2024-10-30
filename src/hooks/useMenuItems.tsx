@@ -12,7 +12,7 @@ export default function useMenuItems() {
   const menuItems: MenuItems[] = [
     {
       name: t("overview"),
-      href: "#",
+      href: "/",
       notifs: 0,
       icon: (
         <svg
