@@ -1,7 +1,9 @@
 {
   "HomePage": {
-    "title": "Hallo Welt!",
-    "about": "Zur Über-Seite gehen"
+    "title": "Informationsseite",
+    "ssr": "Gehe zur /orders-Seite für die SSR-Seite",
+    "csr": "Gehe zur /users-Seite für die CSR-Seite",
+    "ssg": "Gehe zur /orders/1-10-Seite für die SSG-Seite"
   },
   "Menu": {
     "overview": "Überblick",

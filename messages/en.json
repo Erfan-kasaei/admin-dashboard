@@ -1,7 +1,9 @@
 {
   "HomePage": {
-    "title": "Hello world!",
-    "about": "Go to the about page"
+    "title": "Information Page",
+    "ssr": "Go to the /orders page for ssr page",
+    "csr": "Go to the /users page for csr page",
+    "ssg": "Go to the /orders/1-10 page for ssg page"
   },
   "Menu": {
     "overview": "Overview",

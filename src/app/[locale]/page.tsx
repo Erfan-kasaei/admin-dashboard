@@ -4,9 +4,10 @@ import { Link } from "@/i18n/routing";
 export default function HomePage() {
   const t = useTranslations("HomePage");
   return (
-    <div>
-      <h1 className="text-orange-600">{t("title")}</h1>
-      <Link href="/about">{t("about")}</Link>
+    <div className="font-semibold text-xl text-orange-400 flex flex-col gap-10">
+      <Link href="/orders">{t("ssr")}</Link>
+      <Link href="/users">{t("csr")}</Link>
+      <Link href="/users/3">{t("ssg")}</Link>
     </div>
   );
 }
