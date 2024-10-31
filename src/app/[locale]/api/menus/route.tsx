@@ -7,7 +7,7 @@ interface MenuItems {
   icon: React.ReactNode;
 }
 export async function GET() {
-  const t = await getTranslations();
+  const t = await getTranslations("Menu");
   const menuItems: MenuItems[] = [
     {
       name: t("overview"),
