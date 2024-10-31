@@ -22,6 +22,8 @@
   "TableHeads": {
     "id": "Id",
     "name": "Name",
+    "username": "Username",
+    "website": "Website",
     "email": "Email",
     "phone": "Phone"
   }
