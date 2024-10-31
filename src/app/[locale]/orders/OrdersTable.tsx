@@ -1,9 +1,17 @@
 "use client";
+import { Link, useRouter } from "@/i18n/routing";
 import { useTranslations } from "next-intl";
 import { Table } from "rizzui";
 
-export default function OrdersTable({ data }: { data: any }) {
+export default function OrdersTable({
+  data,
+  clickable,
+}: {
+  data: any;
+  clickable?: boolean;
+}) {
   const t = useTranslations("TableHeads");
+  const router = useRouter();
   return (
     <Table variant="modern">
       <Table.Header>
@@ -16,7 +24,11 @@ export default function OrdersTable({ data }: { data: any }) {
       </Table.Header>
       <Table.Body>
         {data.map((item: any) => (
-          <Table.Row key={item.id}>
+          <Table.Row
+            key={item.id}
+            className={`${clickable && `cursor-pointer`}`}
+            onClick={() => clickable && router.push(`/users/${item.id}`)}
+          >
             <Table.Cell>{item.id}</Table.Cell>
             <Table.Cell>{item.name}</Table.Cell>
             <Table.Cell>{item.email}</Table.Cell>

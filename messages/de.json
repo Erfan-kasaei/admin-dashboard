@@ -1,10 +1,10 @@
 {
   "HomePage": {
     "title": "Hallo Welt!",
-    "about": "Gehe zur Über-Seite"
+    "about": "Zur Über-Seite gehen"
   },
   "Menu": {
-    "overview": "Übersicht",
+    "overview": "Überblick",
     "artworks": "Kunstwerke",
     "orders": "Bestellungen",
     "users": "Benutzer",
@@ -12,10 +12,29 @@
     "coustomers": "Kunden",
     "seller": "Verkäufer",
     "contract": "Vertrag",
-    "setting": "Einstellung"
+    "setting": "Einstellungen"
   },
   "OrdersPage": {
     "title": "Bestellliste",
+    "export": "Exportieren",
+    "create": "Bestellung erstellen"
+  },
+  "TableHeads": {
+    "id": "Id",
+    "name": "Name",
+    "username": "Benutzername",
+    "website": "Webseite",
+    "email": "E-Mail",
+    "phone": "Telefon"
+  },
+  "Cards": {
+    "processing": "In Bearbeitung",
+    "shipping": "Versand",
+    "completed": "Abgeschlossen",
+    "cancelled": "Storniert"
+  },
+  "UsersPage": {
+    "title": "Benutzerliste",
     "export": "Exportieren",
     "create": "Bestellung erstellen"
   }

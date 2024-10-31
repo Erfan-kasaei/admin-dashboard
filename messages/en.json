@@ -32,5 +32,10 @@
     "shipping": "shipping",
     "completed": "Completed",
     "cancelled": "Cancelled"
+  },
+  "UsersPage": {
+    "title": "Users list",
+    "export": "Export",
+    "create": "Create Order"
   }
 }

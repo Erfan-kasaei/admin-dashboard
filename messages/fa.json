@@ -1,7 +1,7 @@
 {
   "HomePage": {
     "title": "سلام دنیا!",
-    "about": "به صفحه درباره بروید"
+    "about": "برو به صفحه درباره"
   },
   "Menu": {
     "overview": "بررسی اجمالی",
@@ -16,7 +16,26 @@
   },
   "OrdersPage": {
     "title": "لیست سفارشات",
-    "export": "خروجی گرفتن",
+    "export": "صادر کردن",
+    "create": "ایجاد سفارش"
+  },
+  "TableHeads": {
+    "id": "شناسه",
+    "name": "نام",
+    "username": "نام کاربری",
+    "website": "وب‌سایت",
+    "email": "ایمیل",
+    "phone": "تلفن"
+  },
+  "Cards": {
+    "processing": "در حال پردازش",
+    "shipping": "در حال ارسال",
+    "completed": "تکمیل شده",
+    "cancelled": "لغو شده"
+  },
+  "UsersPage": {
+    "title": "لیست کاربران",
+    "export": "صادر کردن",
     "create": "ایجاد سفارش"
   }
 }

@@ -17,7 +17,7 @@ export default function Header() {
       value: "en",
     },
     {
-      label: "Persian",
+      label: "فارسی",
       value: "fa",
     },
     {
