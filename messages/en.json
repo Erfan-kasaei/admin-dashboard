@@ -26,5 +26,11 @@
     "website": "Website",
     "email": "Email",
     "phone": "Phone"
+  },
+  "Cards": {
+    "processing": "Processing",
+    "shipping": "shipping",
+    "completed": "Completed",
+    "cancelled": "Cancelled"
   }
 }

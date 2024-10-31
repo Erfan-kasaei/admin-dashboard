@@ -1,6 +1,7 @@
 import { getTranslations } from "next-intl/server";
 import { Button } from "rizzui";
 import OrdersTable from "./OrdersTable";
+import OrdersCarts from "./OrdersCarts";
 
 export default async function page() {
   const res = await fetch("https://jsonplaceholder.typicode.com/users", {
@@ -36,6 +37,7 @@ export default async function page() {
           <Button className="rounded-none">{t("create")}</Button>
         </div>
       </div>
+      <OrdersCarts />
       <OrdersTable data={data} />
     </div>
   );
