@@ -1,15 +1,16 @@
 "use client";
 import Breadcrumb from "@/components/breadcrumb";
+import useMenuItems from "@/hooks/useMenuItems";
 import { usePathname, useRouter } from "@/i18n/routing";
-import { useLocale, useTranslations } from "next-intl";
+import { useLocale } from "next-intl";
 import { Select } from "rizzui";
 
 export default function Header() {
   const pathname = usePathname();
   const paths = pathname.split("/");
   const router = useRouter();
-  const t = useTranslations("Menu");
   const locale = useLocale();
+  const { menuItems } = useMenuItems();
   const options = [
     {
       label: "English",
@@ -48,7 +49,15 @@ export default function Header() {
               />
             </svg>
           </span>
-          {paths.map((path) => path && <span key={path}>{t(path)}</span>)}
+          {paths.map((path) =>
+            menuItems.find((item) => item.href === path) ? (
+              <div key={path}>
+                {menuItems.find((item) => item.href === path)?.href}
+              </div>
+            ) : path ? (
+              <span key={path}>{path}</span>
+            ) : null
+          )}
         </Breadcrumb>
       </div>
       <div className="flex items-center gap-5 *:cursor-pointer">
@@ -103,7 +112,7 @@ export default function Header() {
         <Select
           options={options}
           value={options.find((option) => option.value === locale)}
-          onChange={(e: any) => {
+          onChange={(e: { label: string; value: string }) => {
             router.replace(pathname, { locale: e.value });
           }}
           prefix={
