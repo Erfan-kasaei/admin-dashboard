@@ -1,4 +1,4 @@
-import useMenuItems, { MenuItems } from "@/hooks/useMenuItems";
+import { MenuItems } from "@/hooks/useMenuItems";
 import MenuItem from "./MenuItem";
 import { URL } from "@/constats";
 import { getLocale } from "next-intl/server";

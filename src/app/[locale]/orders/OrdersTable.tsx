@@ -1,5 +1,5 @@
 "use client";
-import { Link, useRouter } from "@/i18n/routing";
+import { useRouter } from "@/i18n/routing";
 import { useTranslations } from "next-intl";
 import { Table } from "rizzui";
 

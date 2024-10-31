@@ -4,7 +4,7 @@ import { Button } from "rizzui";
 import { useTranslations } from "next-intl";
 import { useEffect, useState } from "react";
 
-export default function page() {
+export default function UsersPage() {
   const [data, setData] = useState([]);
   useEffect(() => {
     const getData = async () => {
