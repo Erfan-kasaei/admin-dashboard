@@ -20,10 +20,6 @@ export default function Header() {
       label: "فارسی",
       value: "fa",
     },
-    {
-      label: "deutsch",
-      value: "de",
-    },
   ];
   return (
     <div className="w-full flex justify-between items-center mt-5 mb-10">
