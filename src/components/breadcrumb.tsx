@@ -48,16 +48,16 @@ const Breadcrumb = ({
         return (
           <>
             {React.cloneElement(child, {
-              className: `text-gray-700 last:text-gray-500 font-medium"
+              className: `text-zinc-700 last:text-zinc-500 font-medium"
                 ${disableCurrent && "last:pointer-events-none"}`,
             })}
             {index < numOfItems - 1 &&
               (separatorVariant === "default" ? (
-                <span className={`text-sm text-gray-500 ${separatorClassName}`}>
+                <span className={`text-sm text-zinc-500 ${separatorClassName}`}>
                   {separator}
                 </span>
               ) : (
-                <span className="h-1 w-1 rounded-full bg-gray-300" />
+                <span className="h-1 w-1 rounded-full bg-zinc-300" />
               ))}
           </>
         );
