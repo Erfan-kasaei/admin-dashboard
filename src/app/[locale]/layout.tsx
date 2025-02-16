@@ -24,7 +24,7 @@ export default async function LocaleLayout({
   return (
     <html lang={locale}>
       <body
-        className="p-4 h-screen overflow-hidden"
+        className="p-4 h-screen overflow-hidden bg-zinc-900"
         dir={locale === "fa" ? "rtl" : "ltr"}
       >
         <NextIntlClientProvider messages={messages}>

@@ -11,7 +11,7 @@ export default function MenuItem({ item }: { item: MenuItems }) {
   return (
     <Link
       href={item.href}
-      className={`py-3 px-8 flex justify-between items-center hover:bg-zinc-700 ${
+      className={`py-3 px-8 flex justify-between items-center hover:bg-blue-950 ${
         pathname === item.href && locale !== "fa"
           ? `border-l-[6px]`
           : locale === "fa" && pathname === item.href

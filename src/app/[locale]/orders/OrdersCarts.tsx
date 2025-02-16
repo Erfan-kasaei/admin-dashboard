@@ -6,7 +6,7 @@ export default async function OrdersCarts() {
   const t = await getTranslations("Cards");
   return (
     <div className="flex justify-evenly flex-wrap items-center my-10">
-      <div className="border-2 border-black py-6 px-14 flex gap-5 items-start font-semibold">
+      <div className="bg-blue-900 rounded-2xl text-zinc-50 py-6 px-14 flex gap-5 items-start font-semibold">
         <HiOutlineGlobeAlt className="size-6" />
 
         <div>
@@ -14,7 +14,7 @@ export default async function OrdersCarts() {
           <p>{t("processing")}</p>
         </div>
       </div>
-      <div className="border-2 border-black py-6 px-14 flex gap-5 items-start font-semibold">
+      <div className="bg-blue-900 rounded-2xl text-zinc-50 py-6 px-14 flex gap-5 items-start font-semibold">
         <span>
           <HiOutlineClipboardList className="size-6" />
         </span>
@@ -23,7 +23,7 @@ export default async function OrdersCarts() {
           <p>{t("shipping")}</p>
         </div>
       </div>
-      <div className="border-2 border-black py-6 px-14 flex gap-5 items-start font-semibold">
+      <div className="bg-blue-900 rounded-2xl text-zinc-50 py-6 px-14 flex gap-5 items-start font-semibold">
         <span>
           <HiOutlineClipboardList className="size-6" />
         </span>
@@ -32,7 +32,7 @@ export default async function OrdersCarts() {
           <p>{t("completed")}</p>
         </div>
       </div>
-      <div className="border-2 border-black py-6 px-14 flex gap-5 items-start font-semibold">
+      <div className="bg-blue-900 rounded-2xl text-zinc-50 py-6 px-14 flex gap-5 items-start font-semibold">
         <span>
           <HiOutlineClipboardList className="size-6" />
         </span>
