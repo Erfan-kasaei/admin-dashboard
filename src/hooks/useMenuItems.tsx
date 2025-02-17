@@ -1,5 +1,10 @@
 import { useTranslations } from "next-intl";
-import { HiOutlineClipboardList } from "react-icons/hi";
+import {
+  HiOutlineClipboardList,
+  HiOutlineShoppingBag,
+  HiOutlineUsers,
+  HiIdentification,
+} from "react-icons/hi";
 
 export interface MenuItems {
   name: string;
@@ -18,52 +23,22 @@ export default function useMenuItems() {
       icon: <HiOutlineClipboardList className="size-6" />,
     },
     {
-      name: t("artworks"),
-      href: "/artworks",
-      notifs: 0,
-      icon: <HiOutlineClipboardList className="size-6" />,
-    },
-    {
       name: t("orders"),
       href: "/orders",
       notifs: 7,
-      icon: <HiOutlineClipboardList className="size-6" />,
+      icon: <HiOutlineShoppingBag className="size-6" />,
     },
     {
       name: t("users"),
       href: "/users",
       notifs: 0,
-      icon: <HiOutlineClipboardList className="size-6" />,
+      icon: <HiOutlineUsers className="size-6" />,
     },
     {
-      name: t("products"),
-      href: "/products",
+      name: t("cards"),
+      href: "/cards",
       notifs: 0,
-      icon: <HiOutlineClipboardList className="size-6" />,
-    },
-    {
-      name: t("coustomers"),
-      href: "/customers",
-      notifs: 6,
-      icon: <HiOutlineClipboardList className="size-6" />,
-    },
-    {
-      name: t("seller"),
-      href: "/seller",
-      notifs: 0,
-      icon: <HiOutlineClipboardList className="size-6" />,
-    },
-    {
-      name: t("contract"),
-      href: "/contract",
-      notifs: 0,
-      icon: <HiOutlineClipboardList className="size-6" />,
-    },
-    {
-      name: t("setting"),
-      href: "/setting",
-      notifs: 0,
-      icon: <HiOutlineClipboardList className="size-6" />,
+      icon: <HiIdentification className="size-6" />,
     },
   ];
   return { menuItems };
