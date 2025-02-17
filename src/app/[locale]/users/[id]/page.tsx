@@ -12,7 +12,7 @@ export default async function UserPage({
     `https://jsonplaceholder.typicode.com/users/${id}`
   ).then((res) => res.json());
   return (
-    <div className="flex gap-3 flex-wrap">
+    <div className="flex gap-3 flex-wrap bg-zinc-400 pb-8 px-4 rounded-3xl">
       <DataProperty property={t("id")} value={user.id} />
       <DataProperty property={t("username")} value={user.username} />
       <DataProperty property={t("name")} value={user.name} />
@@ -28,7 +28,7 @@ export async function generateStaticParams() {
     cache: "no-store",
   });
   const users = await res.json();
-  const locales = ["en", "de", "fa"];
+  const locales = ["en", "fa"];
 
   const paths: any[] = [];
   locales.forEach((locale) => {

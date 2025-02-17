@@ -38,7 +38,7 @@ export default function DataProperty({
             ) : (
               <div className="flex gap-2">
                 <HiXMark className="w-4 h-4" />
-                <span>خیر</span>
+                <span>No!</span>
               </div>
             )
           ) : (

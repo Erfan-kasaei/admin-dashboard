@@ -28,10 +28,10 @@ export default function Header() {
         <Breadcrumb
           separator="/"
           separatorVariant="default"
-          className="flex-wrap"
+          className="flex-wrap text-zinc-500"
         >
           <span>
-            <HiOutlineClipboardList className="size-6" />
+            <HiOutlineClipboardList className="size-6 text-zinc-500" />
           </span>
           {paths.map((path) =>
             menuItems.find((item) => item.href === path) ? (
@@ -44,15 +44,15 @@ export default function Header() {
           )}
         </Breadcrumb>
       </div>
-      <div className="flex items-center gap-5 *:cursor-pointer">
+      <div className="flex items-center gap-5 text-zinc-300 *:cursor-pointer">
         <span>
-        <HiOutlineClipboardList className="size-6" />
+        <HiOutlineClipboardList className="size-6 hover:text-blue duration-300" />
         </span>
         <span>
-        <HiOutlineClipboardList className="size-6" />
+        <HiOutlineClipboardList className="size-6 hover:text-blue duration-300" />
         </span>
         <span>
-        <HiOutlineClipboardList className="size-6" />
+        <HiOutlineClipboardList className="size-6 hover:text-blue duration-300" />
         </span>
         <Select
           options={options}
@@ -64,7 +64,7 @@ export default function Header() {
             <HiOutlineClipboardList className="size-6" />
           }
           size="sm"
-          className={"min-w-20"}
+          className={"min-w-20 bg-zinc-800"}
         />
       </div>
     </div>
