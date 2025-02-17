@@ -13,8 +13,8 @@ export default function OrdersTable({
   const t = useTranslations("TableHeads");
   const router = useRouter();
   return (
-    <div className="text-zinc-100">
-      <Table variant="minimal">
+    <div className="text-zinc-100 bg-zinc-800">
+      <Table>
         <Table.Header>
           <Table.Row>
             <Table.Head>{t("id")}</Table.Head>
@@ -27,7 +27,9 @@ export default function OrdersTable({
           {data.map((item: any) => (
             <Table.Row
               key={item.id}
-              className={`${clickable && `cursor-pointer`}`}
+              className={`${
+                clickable && `cursor-pointer`
+              } hover:text-zinc-900 rounded-lg`}
               onClick={() => clickable && router.push(`/users/${item.id}`)}
             >
               <Table.Cell>{item.id}</Table.Cell>
